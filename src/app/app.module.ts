@@ -8,7 +8,7 @@ import { ActiveUsersComponent } from './active-users/active-users.component';
 import { InactiveUsersComponent } from './inactive-users/inactive-users.component';
 import { UserService } from './users.service';
 import { CounterService } from './counter.service';
-
+import { Injectable } from '@angular/core/src/di/injectable';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +20,7 @@ import { CounterService } from './counter.service';
     FormsModule,
     HttpModule
   ],
-  providers: [UserService, CounterService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

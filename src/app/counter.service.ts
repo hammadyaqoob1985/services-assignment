@@ -1,5 +1,6 @@
-import { OnInit } from '@angular/core';
+import { OnInit, Injectable } from '@angular/core';
 
+@Injectable({providedIn: 'root'})
 export class CounterService implements OnInit {
     private activeToInactiveCount : number = 0;
     private inactiveToActiveCount : number = 0;
